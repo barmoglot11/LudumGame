@@ -7,16 +7,10 @@ public class HiveOffsetChange : MonoBehaviour
     [SerializeField] KeyCode hiveOffsetSmaller = KeyCode.Q;
     [SerializeField] KeyCode hiveOffsetBigger = KeyCode.E;
 
-    RelativeJoint2D Joint;
-    Vector2 offset;
+    public RelativeJoint2D Joint => GetComponent<RelativeJoint2D>();
+    public Vector2 offset;
 
     [SerializeField] float changeOffset = 1f;
-
-    private void Awake()
-    {
-        Joint = GetComponent<RelativeJoint2D>();
-        offset = Joint.linearOffset;
-    }
 
     private void Update()
     {
