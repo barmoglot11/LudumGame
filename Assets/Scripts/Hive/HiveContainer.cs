@@ -25,6 +25,14 @@ public class HiveContainer : MonoBehaviour
         }
     }
 
+    public void DestroyBugs(int count)
+    {
+        for( int i = 0; i < count; ++i)
+        {
+            GameObject.Destroy(Bugs[i]);
+        }
+    }
+
     private void Update()
     {
         var mw = Input.GetAxis("Mouse ScrollWheel");
@@ -32,14 +40,11 @@ public class HiveContainer : MonoBehaviour
         {
             if (mw != 0)
                 bugsCount+= (int)(mw*10);
-            
-            Debug.Log("count of bugs =" + bugsCount);
         }
 
         if (Input.GetKeyUp(CreateBugsKey))
         {
             CreateBugs(bugsCount);
-            Debug.Log("Created bugs =" + Bugs.Count);
             bugsCount = 0;
         }
 
