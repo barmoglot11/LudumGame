@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -23,5 +24,19 @@ public class MenuController : MonoBehaviour
             screen2.SetActive(false);
         }
         
+    }
+
+    public void load_game()
+    {      
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void load_lvl1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+    public void load_lvl2()
+    {
+        SceneManager.LoadScene("Level2");
     }
 }

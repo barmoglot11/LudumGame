@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 110179639}
   - component: {fileID: 110179638}
   m_Layer: 5
-  m_Name: Levels (2)
+  m_Name: Level3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 203447542}
   - component: {fileID: 203447541}
   m_Layer: 5
-  m_Name: Levels (1)
+  m_Name: Level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -910,7 +910,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 203447545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1918232221}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: load_lvl2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &203447545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2577,7 +2589,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 919733795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1918232221}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: load_game
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &919733795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5095,7 +5119,7 @@ GameObject:
   - component: {fileID: 1981815309}
   - component: {fileID: 1981815308}
   m_Layer: 5
-  m_Name: Levels
+  m_Name: Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5261,7 +5285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1981815312}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1918232221}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: load_lvl1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1981815312
 MonoBehaviour:
   m_ObjectHideFlags: 0
