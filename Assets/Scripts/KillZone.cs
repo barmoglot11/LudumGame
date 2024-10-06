@@ -16,6 +16,11 @@ public class KillZone : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
+
+        if(collision.tag == "Bloha")
+        {
+            Destroy(collision.gameObject);
+        }
     }
     // Update is called once per frame
     void Update()

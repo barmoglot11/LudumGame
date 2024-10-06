@@ -15,9 +15,12 @@ public class Door : MonoBehaviour
             }
             else if(SceneManager.GetActiveScene().name == "Level2")
             {
+                SceneManager.LoadScene("Level3");
+            }
+            else if (SceneManager.GetActiveScene().name == "Level3")
+            {
                 SceneManager.LoadScene("Menu");
             }
-            
         }
     }
 }

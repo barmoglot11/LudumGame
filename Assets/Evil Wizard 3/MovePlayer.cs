@@ -44,7 +44,7 @@ public class MovePlayer : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Menu\\");
+            SceneManager.LoadScene("Menu");
         }
 
     }
