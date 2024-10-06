@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -40,6 +41,12 @@ public class MovePlayer : MonoBehaviour
         _animations.IsGrounded = _isGrounded;
         _animations.OnWall = _onWall;
         _animations.IsFlying = IsFlying();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu\\");
+        }
+
     }
 
     private bool IsFlying()

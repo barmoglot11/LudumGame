@@ -3,15 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HealthSprite
+  - ManaSprite
+  - Ground
+  - Inter
+  - Lever
+  - Door
+  - Bloha
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Platform
   - 
   - 
   - 
