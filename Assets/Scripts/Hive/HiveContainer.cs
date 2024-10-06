@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HiveContainer : MonoBehaviour
 {
+    //private HealthSystemV2 HPHandMPSystem => HealthSystemV2.Instance;
+
     [SerializeField] KeyCode CreateBugsKey = KeyCode.Z;
     [SerializeField] List<Bug> Bugs;
     [SerializeField] GameObject BugPrefab;
@@ -23,13 +25,15 @@ public class HiveContainer : MonoBehaviour
 
             prefab.GetComponent<HiveOffsetChange>().Joint.connectedBody = Cursor.GetComponent<Rigidbody2D>();
         }
+
+        //HPHandMPSystem.UseMana(count);
     }
 
     public void DestroyBugs(int count)
     {
         for( int i = 0; i < count; ++i)
         {
-            GameObject.Destroy(Bugs[i]);
+            Destroy(Bugs[i]);
         }
     }
 
@@ -39,7 +43,8 @@ public class HiveContainer : MonoBehaviour
         if (Input.GetKey(CreateBugsKey))
         {
             if (mw != 0)
-                bugsCount+= (int)(mw*10);
+                if(HPHandMPSystem.manaPoint > bugsCount)
+                    bugsCount+= (int)(mw*10);
         }
 
         if (Input.GetKeyUp(CreateBugsKey))
